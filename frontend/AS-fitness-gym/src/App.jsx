@@ -20,11 +20,11 @@ const App = () => {
       <Navbar />
       <Header/>
       <Banner />
-      <Workouts />
-      <Images />
-      <Packages />
-      <Bookdemo />
-      <Contact />
+      <div id="workouts"><Workouts /></div>
+      <div id="images"><Images /></div>
+      <div id="packages"><Packages /></div>
+      <div id="bookdemo"><Bookdemo /></div>
+      <div id="contact"><Contact /></div>
       <BMIcalculator />
       <Footer />
       <ToastContainer theme="dark" position="top-center" />

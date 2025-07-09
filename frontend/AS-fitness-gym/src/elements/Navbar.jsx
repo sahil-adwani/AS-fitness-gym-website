@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [nav, setnav] = useState(true);
 
@@ -28,11 +29,11 @@ window.addEventListener('scroll', changeBackground);
       </label>
 
       <ul className='menu'>
-        <li><Link to='Workouts' smooth = {true} duration = {1000}>Features</Link></li>
-        <li><Link to='#'>gallery</Link></li>
-        <li><Link to='#'>Offers</Link></li>
-        <li><Link to='#'>book demo</Link></li>
-        <li><Link to='#'>Contact</Link></li>
+        <li><Link to="workouts" smooth={true} duration={500}>Features</Link></li>
+        <li><Link to="images" smooth={true} duration={500}>Gallery</Link></li>
+        <li><Link to="packages" smooth={true} duration={500}>Offers</Link></li>
+        <li><Link to="bookdemo" smooth={true} duration={500}>Book Demo</Link></li>
+        <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
   </nav>
 
